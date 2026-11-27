@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap");
+
+@import "tailwindcss";
+
+/* ==========================================================
+   CHARTE GRAPHIQUE — Urban Streetwear Hub (thème Tailwind v4)
+   Génère les classes : bg-ink, text-orange, font-display, rounded-card…
+   ========================================================== */
+@theme {
+  /* Couleurs */
+  --color-bg: #d6dde8;
+  --color-paper: #f1f1ef;
+  --color-ink: #1a1f24;
+  --color-ink-soft: #2b3138;
+  --color-ink-card: #3a4047;
+  --color-orange: #f26a1b;
+  --color-muted: #8a9096;
+  --color-sky: #6aa9d6;
+
+  /* Typographies */
+  --font-display: "Bebas Neue", "Anton", Impact, sans-serif;
+  --font-body: "Outfit", system-ui, sans-serif;
+
+  /* Formes */
+  --radius-card: 28px;
+  --radius-panel: 22px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--color-bg);
+    color: var(--color-ink);
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@font-face {
+  font-family: "Southern Aire";
+  src: url("./assets/fonts/SouthernAire.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sensations Qualities";
+  src: url("./assets/fonts/SensationsQualities.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* ...tes couleurs et polices existantes... */
+  --font-script: "Southern Aire", "Brush Script MT", cursive;
+  --font-sensation: "Sensations Qualities", cursive;
+}
